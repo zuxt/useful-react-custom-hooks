@@ -3,6 +3,8 @@ import './App.css'
 import Toggle from './components/Toggle/Toggle'
 import Timeout from './components/Timeout/Timeout';
 import Debounce from './components/Debounce/Debounce';
+import UpdateEffect from './components/UpdateEffect/UpdateEffect';
+import Array from './components/Array/Array';
 
 const App: React.FC= ()=>{
   return (
@@ -24,8 +26,23 @@ const App: React.FC= ()=>{
         <div className="text">
           Hook that uses setTimeout to trigger callback after set timeout
         </div>
-
         <Debounce />
+      </div>
+
+      <div className="wrapper">
+        <label className="label">useUpdateEffect custom hook example</label>
+        <div className="text">
+          Hook that triggers callback on each update BUT first
+        </div>
+        <UpdateEffect />
+      </div>
+
+      <div className="wrapper">
+        <label className="label">useArray custom hook example</label>
+        <div className="text">
+          Collection of most used Array functions
+        </div>
+        <Array />
       </div>
     </>
   );
