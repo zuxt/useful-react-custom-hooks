@@ -5,6 +5,7 @@ import Timeout from './components/Timeout/Timeout';
 import Debounce from './components/Debounce/Debounce';
 import UpdateEffect from './components/UpdateEffect/UpdateEffect';
 import Array from './components/Array/Array';
+import Previous from './components/Previous/Previous';
 
 const App: React.FC= ()=>{
   return (
@@ -39,10 +40,14 @@ const App: React.FC= ()=>{
 
       <div className="wrapper">
         <label className="label">useArray custom hook example</label>
-        <div className="text">
-          Collection of most used Array functions
-        </div>
+        <div className="text">Collection of most used Array functions</div>
         <Array />
+      </div>
+
+      <div className="wrapper">
+        <label className="label">usePrevious custom hook example</label>
+        <div className="text">Store previous value</div>
+        <Previous />
       </div>
     </>
   );
