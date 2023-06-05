@@ -6,6 +6,8 @@ import Debounce from './components/Debounce/Debounce';
 import UpdateEffect from './components/UpdateEffect/UpdateEffect';
 import Array from './components/Array/Array';
 import Previous from './components/Previous/Previous';
+import StateHistory from './components/StateHistory/StateHistory';
+import Storage from './components/Storage/Storage';
 
 const App: React.FC= ()=>{
   return (
@@ -48,6 +50,18 @@ const App: React.FC= ()=>{
         <label className="label">usePrevious custom hook example</label>
         <div className="text">Store previous value</div>
         <Previous />
+      </div>
+
+      <div className="wrapper">
+        <label className="label">useStateHistory custom hook example</label>
+        <div className="text">Store values history</div>
+        <StateHistory />
+      </div>
+
+      <div className="wrapper">
+        <label className="label">useStorage custom hook example</label>
+        <div className="text">Store values localstorage, sessionstorage</div>
+        <Storage />
       </div>
     </>
   );
