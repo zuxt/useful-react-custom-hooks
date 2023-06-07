@@ -10,6 +10,7 @@ import StateHistory from './components/StateHistory/StateHistory';
 import Storage from './components/Storage/Storage';
 import Async from './components/Async/Async';
 import Fetch from './components/Fetch/Fetch';
+import Translations from './components/Translations/Translations';
 
 const App: React.FC= ()=>{
   return (
@@ -76,6 +77,12 @@ const App: React.FC= ()=>{
         <label className="label">useFetch custom hook example</label>
         <div className="text">fetch hook example</div>
         <Fetch />
+      </div>
+
+      <div className="wrapper">
+        <label className="label">useTranslation custom hook example</label>
+        <div className="text">translation hook example</div>
+        <Translations />
       </div>
     </>
   );

@@ -1,0 +1,5 @@
+{
+  "hi": "Djes",
+  "bye": "Zdraavo",
+  "nested": { "value": "Testis" }
+}
