@@ -11,6 +11,9 @@ import Storage from './components/Storage/Storage';
 import Async from './components/Async/Async';
 import Fetch from './components/Fetch/Fetch';
 import Translations from './components/Translations/Translations';
+import EventListener from './components/EventListener/EventListener';
+import OnScreen from './components/OnScreen/OnScreen';
+import WindowSize from './components/WindowSize/WindowSize';
 
 const App: React.FC= ()=>{
   return (
@@ -68,6 +71,12 @@ const App: React.FC= ()=>{
       </div>
 
       <div className="wrapper">
+        <label className="label">useOnScreen custom hook example</label>
+        <div className="text">OnScreen hook example</div>
+        <OnScreen />
+      </div>
+
+      <div className="wrapper">
         <label className="label">useAsync custom hook example</label>
         <div className="text">async hook example</div>
         <Async />
@@ -83,6 +92,18 @@ const App: React.FC= ()=>{
         <label className="label">useTranslation custom hook example</label>
         <div className="text">translation hook example</div>
         <Translations />
+      </div>
+
+      <div className="wrapper">
+        <label className="label">useEvents custom hook example</label>
+        <div className="text">Events hook example</div>
+        <EventListener />
+      </div>
+
+      <div className="wrapper">
+        <label className="label">useWindowSize custom hook example</label>
+        <div className="text">WindowSize hook example</div>
+        <WindowSize />
       </div>
     </>
   );
