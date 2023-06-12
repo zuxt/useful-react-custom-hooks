@@ -24,18 +24,14 @@ export default function useTranslations() {
     t: translate
   };
 }
-  type Tlangkey = keyof typeof translations;
+type Tlangkey = keyof typeof translations;
+  
+const reducerF = (obj: Tlangkey, key:string) => {
+      const k = key as keyof typeof obj;
+      return obj?.[k];
+};
 
-function getNestedTranslations(language: Tlangkey, keys: string[]) {
-  const l = language;
-  const tr = translations;
 
-  console.log(translations, language);
-
-  return keys.reduce((obj, key) => {
-
-    const k = key as keyof typeof obj;
-
-    return obj?.[k];
-  }, translations[language]);
+function getNestedTranslations(language: Tlangkey, keys: any[]) {
+  return keys.reduce(reducerF, translations[language]);
 }
