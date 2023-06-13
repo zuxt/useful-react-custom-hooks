@@ -3,7 +3,7 @@ import useOnScreen from '../../hooks/useOnScreen/useOnScreen';
 
 const OnScreen:React.FC = () => { 
   const sectionRef = useRef<HTMLDivElement>(null);
-  const visible = useOnScreen(sectionRef, '-200px');
+  const visible = useOnScreen<HTMLDivElement>(sectionRef, '-200px');
 
   return (
     <div>

@@ -14,6 +14,9 @@ import Translations from './components/Translations/Translations';
 import EventListener from './components/EventListener/EventListener';
 import OnScreen from './components/OnScreen/OnScreen';
 import WindowSize from './components/WindowSize/WindowSize';
+import MediaQuery from './components/MediaQuery/MediaQuery';
+import StateValidation from './components/StateValidation/StateValidation';
+import GetSize from './components/GetSize/GetSize';
 
 const App: React.FC= ()=>{
   return (
@@ -104,6 +107,24 @@ const App: React.FC= ()=>{
         <label className="label">useWindowSize custom hook example</label>
         <div className="text">WindowSize hook example</div>
         <WindowSize />
+      </div>
+
+      <div className="wrapper">
+        <label className="label">useMediaQuery custom hook example</label>
+        <div className="text">MediaQuery hook example</div>
+        <MediaQuery />
+      </div>
+
+      <div className="wrapper">
+        <label className="label">useStatevalidation custom hook example</label>
+        <div className="text">Statevalidation hook example</div>
+        <StateValidation />
+      </div>
+
+      <div className="wrapper">
+        <label className="label">useGetSize custom hook example</label>
+        <div className="text">GetSize hook example</div>
+        <GetSize />
       </div>
     </>
   );

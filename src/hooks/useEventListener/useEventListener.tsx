@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 export default function useEventListener(
   eventType: keyof WindowEventMap,
   callback: (e: Event) => void,
-  element = window
+  element: any = window
 ) {
   const callbackRef = useRef(callback);
 
