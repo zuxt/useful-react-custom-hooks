@@ -1,10 +1,10 @@
-import { ReactNode, useState } from 'react';
+import { useState } from 'react';
 import useEventListener from '../../hooks/useEventListener/useEventListener';
 
 const EventListener:React.FC = () => { 
   const [key, setKey] = useState < string | null >(null);
 
-  useEventListener('keydown', (e:any) => {
+  useEventListener<KeyboardEvent>('keydown', (e) => {
     setKey(e.key);
   });
 

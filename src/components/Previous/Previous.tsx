@@ -5,7 +5,7 @@ const Previous:React.FC = () => {
   const [count, setCount] = useState(0);
   const [name, setName] = useState('Mrki');
 
-  const previousContent = usePrevious(count);
+  const previousContent = usePrevious<number>(count);
 
   return (
     <>

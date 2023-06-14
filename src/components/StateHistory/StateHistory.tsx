@@ -1,7 +1,7 @@
 import useStateHistory from "../../hooks/useStateHistory/useStateHistory";
 
 const StateHistory:React.FC = () => { 
-  const [count, setCount, { history, pointer, back, forward, go }] = useStateHistory(1);
+  const [count, setCount, { history, pointer, back, forward, go }] = useStateHistory<any>(1);
 
   return (
     <div>
